@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Information</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/Main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+<body id=bi>
+    <div class="container-fluid">
+        <%- include('header.ejs') -%>
+
+    <div class="d-flex justify-content-center">
+    <form id="billinfo" method="POST" action="/billing">
+    <center><h2>Billing Information</h2></center>
+    <div id=div1>
+        <input type="text" style="width: 250px" id="name" name="name" pattern="[a-zA-z\s]+"placeholder="Name" required>
+        <input type="text" style="width: 270px"id="ci" name="ci" placeholder="Contact Information" required>
+    </br>    
+        <input type="text" style="width: 585px" id="address" name="address" placeholder="Address" required>
+    </br>
+        <input type="text" style="width: 250px"id="email" name="email" placeholder="email" required>
+        <label id="dop" for="dop" name="doplbl">Date of Payment:</label>
+        <input type="date" id="dop" name="dop">
+    </div>
+    <div id=div2>
+    </br>
+        <p>Mode of Payment:</p>
+                <input type="radio" id="bpi" name="mop" value="BPI">
+                <label for = "bpi">BPI </br>Acct. No: 2669-1127-88</label>
+
+                <input type="radio" id="mb" name="mop" value="Metro Bank">
+                <label id="l2" for = "mb">Metrobank </br>Acct. No: 098-3-098-70183-65</label>
+
+                <input type="radio" id="gc" name="mop" value="GCASH">
+                <label id="l3" for = "gc">GCASH </br>Acct. No: 09177063089</label>
+
+    </br>
+    </div>  
+
+</br>
+    <center><p>**Note: Please take a screenshot of the account number</p></center>
+</br>
+    <center><input id="submit" type="submit"></center>
+    </div>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style by Nice HOME</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/Main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+</style>
+
+<body style="background-color: #f8e4df;">
+    <div class="box">
+        <div class="col-mx">
+          <a href="/login"> 
+            <img id="Logo" src="../images/logocart.png" alt="logo"  width="250" height="200" class="alogo">
+          </a>
+        </div>
+        <div class="col-mx">
+          <ul>
+            <li><a href="/cart">Cart </a></li>     
+            <li><a href="/contactus">Contact Us </a></li>
+            <li><a href="/aboutus">About Us </a></li>  
+            <li class="outer">
+              <a href="/products">Products</a> 
+                <ul class="droppdown">
+                  <% category.forEach(function(category){ %>
+                    <li><a href="/products/<%= category.cat_id %>"+><%= category.name %></a></li>
+                  <% }); %>
+                </ul>
+            </li>
+            <li><a href="/">Home </a></li>
+          </ul>
+        </div>
+      </div>
+ <div class="small-container cart-page">
+    <form method="POST" action="/sendcart" name="cart">
+    <% if(products.length > 0) { %>
+     <table>
+         <tr>
+         <th>Product</th>
+         <th>Quantity</th>
+         <th>Subtotal</th>
+         </tr>
+         <%var subtotal=0%>
+         <% products.forEach(function(product, index) { %>
+         <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="../images/<%=product.picture%>">
+                    <div>
+                        <text><%=product.item_name%></text>
+                        <small><p>Php <%=product.price%></p></small>
+                        <a class="acart" href="/remove-from-cart/pid-<%= index %>">Remove item</a>
+                    </div>
+                </div>
+            </td>
+             <td><input type="number" value="<%=product.quantity%>" class="quantity" name="quantity[]" onchange="this.form.submit()" min="1" max="100"></td>
+            <td><%=(product.price * product.quantity) %></td>
+        </tr>
+        <%subtotal+=(product.quantity * product.price)%>
+        <% }); %>
+     </table>
+     <div class="total-price">
+         <table>
+             <tr>
+                 <td>Subtotal:</td>
+                 <td>P <%=subtotal%></td>
+             </tr>
+             <tr>
+                <td>Shipping Fee:</td>
+                <%var shipping=10%>
+                 <td>P <%=shipping%></td>
+             </tr>
+             <tr>
+                <%var total=subtotal+shipping%>
+                <td>Total:</td>
+                <td>P <%=total%></td>
+             </tr>
+         </table>
+        <button class="chkbtn" type="submit" name="submit_btn" value="CheckOut">Check Out</button>
+     </div>
+    
+     <% } else { %>
+        <p>Your cart is empty. <a href="/products">Continue shopping</a></p>
+      <% } %>
+    </form>
+ </div>
+
+</body>
+
+</html>

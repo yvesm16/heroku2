@@ -1,0 +1,581 @@
+/*Home */
+/* navbar */
+ul {
+	border: 2px solid black;
+	padding-left: 0;
+    float: right;
+    position: absolute; 
+    right: 8%; 
+    top : 5%;
+	border-radius: 5px 5px 5px 5px;
+	list-style: none;
+	border: transparent;
+
+
+} 
+ul li {	
+    position:relative;
+	border-right:solid 2px black;
+	float: right;
+
+}
+
+
+a:link, a:visited {
+    display: block;
+    width: 150px;
+    color: black;
+    background-color: #dcadac;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    font-family: "Comfortaa";
+	font-weight: 400;
+	font-size: 18px;
+    text-align: center;
+    
+    
+}
+
+a:hover, a:active {
+    background-color: #efd9d1;
+}
+
+   
+li:hover {
+    cursor: pointer;
+}
+
+.outer {
+	position: relative;
+  	display: inline-block;
+}
+.dropdown {
+	display: none;
+  	position: absolute;
+  	background-color: #dcadac;
+  	min-width: 100px;
+	z-index: 1;
+	margin-top: 25px;
+	margin-right: -20px;
+}
+
+.dropdown li{
+	color: #dcadac;
+	display: block;
+	
+}
+   
+.outer:hover .dropdown {
+	display: block;
+}
+
+/* logo */
+
+.alogo:link, .alogo:visited {
+    height: 200px;
+    width: 250px;
+    background-color: white;
+    padding: 0px;
+    position:relative; 
+    left:70px; 
+    bottom:20px;
+}
+
+.ashop:link, .ashop:visited {
+    width: 200px;
+    height: 121px;
+    background-color: white;
+    padding: 0px;
+    position:relative; 
+	margin-left: 800px;
+	top:-20px;
+
+}
+
+.apic1:link, .apic1:visited {
+    width: 200px;
+    height: 121px;
+    width: 250px;
+    background-color: white;
+    padding: 0px;
+    position:relative; 
+    left:1150px; 
+    bottom:140px;
+  
+}
+
+.apic2:link, .apic2:visited {
+    width: 200px;
+    height: 121px;
+    width: 250px;
+    background-color: white;
+    padding: 0px;
+    position:relative; 
+    left:800px; 
+    top:30px;
+  
+}
+
+.apic3:link, .apic3:visited {
+    width: 200px;
+    height: 121px;
+    width: 250px;
+    background-color: white;
+    padding: 0px;
+    position:relative; 
+    left:1160px; 
+    bottom:90px;
+  
+}
+
+
+
+
+.logohomeimage{
+    position:relative; 
+    left:40px; 
+    bottom:140px;
+    z-index: -1
+}
+
+.homepic1 {
+	width: 230px;
+	height: 230px;
+	background: #dcadac;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+    border-radius: 17px 17px 17px 17px;
+    position:relative; 
+    left:750px; 
+    top:200px;
+}
+
+
+
+/* style by nice home */
+.pheading {
+	width: 607px;
+	height: 84px;
+	color: #000000;
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 60px;
+    text-align: left;
+    position:relative; 
+    left:160px; 
+    bottom:620px;
+}
+
+.pheading2 {
+	width: 607px;
+	height: 84px;
+	color: #000000;
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 60px;
+    text-align: left;
+    position:relative; 
+    left:160px; 
+    bottom:700px;
+}
+
+.pheading3 {
+	width: 607px;
+	height: 84px;
+	color: #000000;
+	font-family: "Montserrat";
+	font-size: 24px;
+    text-align: left;
+    position:relative; 
+    left:160px; 
+    bottom:770px;
+}
+
+
+.pheading4 {
+	width: 607px;
+	height: 84px;
+	color: #000000;
+	font-family: "Montserrat";
+	font-size: 24px;
+    text-align: left;
+    position:relative; 
+    left:160px; 
+    bottom:850px;
+}
+
+/* learn more */
+.button1{
+	width: 180px;
+	height: 45px;
+	padding: 0px 10px 0px 10px;
+	background: #efd9d1;
+	color: #232323;
+	border-color: #efd9d1;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 12px 12px 12px 12px;
+	font-family: "Comfortaa";
+	font-weight: bold;
+	font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom:850px;
+    left: 170px;
+
+}
+/* about us */
+
+.bodyabout {
+	background-color: white;
+  }
+
+  /*background pink */
+#bg-right {
+	background-color: #efd9d1;
+	position: fixed;
+	top: 26%;
+	bottom: 39%;
+	left: 0;
+	right: 0;
+	z-index: -1;
+  }
+
+
+  .a5 {
+
+	background-color: none;
+}
+
+a:hover, a:active {
+    background-color: #efd9d1;
+}
+
+
+
+
+
+
+
+
+  /* about us */
+.p1 {
+	width: 214px;
+	height: 63px;
+	color: #232323;
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 30px;
+	text-align: left;
+	position: absolute;
+	right: 42%; 
+	bottom: 55%;
+	
+}
+  /* Line */
+.hl1 {
+	width: 120px;
+	height: 2px;
+	background-color: #dcadac;
+	border-color:#dcadac;
+	border-style: solid;
+	position: fixed;
+	right: 47.5%; 
+	top: 38%;
+}
+
+
+.pvision {
+	width: 145px;
+	height: 63px;
+	color: #232323;
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 45px;
+    text-align: left;
+    position: fixed;
+	right: 70%; 
+	top: 58%;
+}
+
+.pvisionS {
+	width: 442px;
+	height: 270px;
+	color: #000000;
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: justify;
+    position: fixed;
+	right: 51%; 
+	top: 70%;
+}
+
+.pmission {
+	width: 145px;
+	height: 63px;
+	color: #232323;
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 45px;
+    text-align: left;
+    position: fixed;
+	right: 35%; 
+	top: 57%;
+}
+
+.pmissionS {
+	width: 442px;
+	height: 270px;
+	color: #000000;
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: justify;
+    position: fixed;
+	right: 16%; 
+	top: 70%;
+}
+
+ /* about us words */
+.p12 {
+	
+	height: px;
+	color: #232323;
+	font-family: "Comfortaa";
+	font-size: 25px;
+	text-align: center;
+	position: relative;
+	top: 100px;
+}
+
+/*contact us */
+
+#fb {
+	width: 79px;
+	height: 79px;
+	
+
+    
+}
+
+#ig {
+	width: 79px;
+	height: 79px;
+}
+
+label {
+	display: -moz-inline-box;
+    display: inline-block;
+	vertical-align: middle;
+	font-size: 14.5px;
+}
+
+body#bi{
+    background-color: #efd9d1;
+    color: #232323;
+    margin-left: 300px;
+	margin-top: 100px;
+	font-family: Montserrat;
+    
+}
+
+body#cu {
+	font-family: Montserrat;
+	text-align: center;
+	font-weight: bold;
+}
+#logo {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    
+    
+}
+#billinfo {
+    width: 791px;
+    height: 492px;
+    background: #ffffff;
+    border-color: #dcadac;
+    border-width: 7px;
+    border-style: solid;
+	border-radius: 7px 7px 7px 7px;
+	margin-left: 80px;
+
+
+}
+input#name, input#ci,input#address, input#email, input#dp {
+	margin-top: 20px;
+	padding: 4px 8px 4px 8px;
+	background: #ffffff;
+	color: #7c7c7c;
+	border-color: #232323;
+	border-style: solid;
+	border-radius: 3px 3px 3px 3px;
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-size: 18px;
+	text-align: left;
+}
+
+#l1,#l2,#l3 {
+    white-space: pre-wrap;
+    
+}
+#submit {
+    width: 127px;
+    height: 39px;
+	padding: 0px 10px 0px 10px;
+	background: #dcadac;
+	color: #231f20;
+	border-color: #e6e6e6;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 24px 24px 24px 24px;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+}
+
+#div1, #div2{
+    margin-left: 90px;
+}
+
+#ci {
+    margin-left: 40px;
+}
+
+#rectangle {
+	width: 100%;
+	height: 100%;
+	background: #efd9d1;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#hl {
+	width: 96px;
+	height: 1px;
+	border-color: #dcadac;
+	border-width: 5px;
+	border-style: solid;
+	background-color: #dcadac;
+}
+
+#pcu {
+	font-size: 18px;
+	line-height: 1.3px;
+	white-space: normal;
+	display: block;
+}
+
+#p {
+	font-size: 25px;
+
+	
+}
+
+#p1 {
+	font-size: 15px;
+	text-align: justify;
+	
+}
+
+
+.clearfix {
+	overflow: auto;
+
+}
+
+.img-responsive {
+	margin: 0 auto;
+}
+
+
+
+/* template for products */
+#container-field img {
+	width: 270px;
+	height: 220px;
+}
+
+.container-field1 img {
+	width: 250px;
+	height: 250px;
+}
+
+
+#title {
+	width: 500px;
+	height: 63px;
+	color: #232323;
+	font-family: "Comfortaa";
+	font-weight: bold;
+	font-size: 45px;
+
+}
+.name {
+	height: 63px;
+	color: #232323;
+	font-family: "Comfortaa";
+	font-weight: bold;
+	font-size: 23px;
+	margin-top: 5%;
+}
+
+.price {
+	height: 63px;
+	color: #232323;
+	font-family: "Comfortaa";
+	font-weight: bold;
+	font-size: 23px;
+    text-align: auto;
+	position: relative;
+	margin-top: -5%;
+}
+.addtocart{
+	width: 180px;
+	height: 45px;
+	padding: 0px 10px 0px 10px;
+	background: #dcadac;
+	color: #232323;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 15px 15px 15px 15px;
+	font-family: "Comfortaa";
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	margin-top: -5%;
+
+}
+
+
+.img-responsive{
+	border-radius: 15px 15px 15px 15px;
+}
+
+
+.test{
+	top: 60%;
+	left: 200px;
+}
+
+
+a.pic4:link, a.pic4:visited {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+
+  }
+
+  

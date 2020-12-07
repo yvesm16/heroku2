@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+     <title>Orders</title>
+     <link rel="stylesheet" type="text/css" href ="../css/style3.css" >
+</head>   
+<body id=dash>
+
+     <div class="sidebar">
+        <img src="../images/logo3.png" alt="logo">
+        <h1>Hello, Claire</h1>
+        <a href="/orderinfo">Orders</a>
+        <a href="/billinfo">Billing Information</a>
+        <a href="/logout">Logout</a>
+     </div>
+
+     <div class ="orders">
+          <h2>Orders</h2>
+          <br>
+          <table>
+               <tr>
+               <th>Order ID</th>
+               <th>Product Name</th>
+               <th>Quantity</th>
+               <th>Subtotal</th>
+               <th>Shipping Fee</th>
+               <th>Total</th>
+               </tr>
+               <% order.forEach(function(order) { %>
+               <tr>
+                  <td><%=order.orderid %></td>
+                  <td><%= order.prodname %></td>
+                  <td><%= order.quantity %></td>
+                  <td><%= order.subtotal %></td>
+                  <td><%= order.shipping %></td>
+                  <td><%= order.total %></td>
+              </tr>
+              <% }); %>
+          </table>
+     </div>
+
+</body>
+</html>

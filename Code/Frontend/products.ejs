@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style by Nice HOME</title>
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/Main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
+</style>
+
+<body>
+    <section>
+        
+    <!--New items-->
+    <div class="container">
+    <%- include('header.ejs') -%>
+    <br>
+
+    <div class = "product">
+    <header>
+        <h1>What's new?</h1>
+        <p>Take your time to check our new products</p>
+    </header>
+    </div>
+
+    <br><br>
+    <div class="row">
+        <div class="col-sm-4 col-md-1">
+        </div>
+        <div class="col-sm-3 col-md-4">
+            <img class="new" id="prod" src="../images/new1.jpg" alt="lights" width="250" height="250">
+        </div>
+        <div class="col-sm-3 col-md-4">
+            <img class="new" id="prod" src="../images/new2.jpg" alt="mirror" width="250" height="250">
+        </div>
+        <div class="col-sm-3">
+            <img class="new" id="prod" src="../images/new3.jpg" alt="nordic vase" width="250" height="250">
+        </div>
+    </div>
+</div>
+    <br><br><br>
+
+    <!--Product-->
+    <div class = "product">
+    <header>
+        <h1>PRODUCTS</h1>
+        <p>Take your time to check our products</p>
+    </header>
+    </div>
+
+    <br><br>
+
+    <div class="prodrow">
+        <% products.forEach(function(products){ %>
+        <div class="prodcolumn">
+            <a href="/products/<%=products.cat_id%>">
+                <img id="prod" src="../images/<%=products.picture%>" alt="<%=products.name%>" width="250" height="250">
+                <p><%=products.name%></p>
+            </a>
+        </div>
+        <% }); %> 
+    </div>
+    <br><br>
+    
+</div>
+    
+</section>
+</body>
+</html>
