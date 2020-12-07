@@ -348,7 +348,7 @@ body#bi{
 	margin-top: -5%;
 }
 .addtocart:link,.addtocart:visited{
-	width: 200px;
+	width: 180px;
 	height: 45px;
 	padding: 10px 10px 10px 10px;
 	background: #dcadac;
@@ -356,10 +356,10 @@ body#bi{
 	border-color: black;
 	border-width: 1px;
 	border-style: solid;
-	border-radius: 20px 20px 20px 20px;
-	font-family: Helvetica;
+	border-radius: 12px 12px 12px 12px;
+	font-family: "Comfortaa";
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 20px;
 	position: relative;
 	margin-top: -5%;
 	text-decoration: none;

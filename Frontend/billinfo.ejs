@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+     <title>Billing Information</title>
+     <link rel="stylesheet" type="text/css" href ="../css/style3.css" >
+</head>    
+
+<body id=dash>
+         
+    <div class="sidebar">
+        <img src="../images/logo3.png" alt="logo">
+        <h1>Hello, Claire</h1>
+        <a href="/orderinfo">Orders</a>
+        <a href="/billinfo">Billing Information</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <div class ="billing">
+        <h2>Billing Information</h2>
+        <br>
+        <table>
+             <tr>
+             <th>Order ID</th>    
+             <th>Full Name</th>
+             <th>Address</th>
+             <th>Contact Number</th>
+             <th>Email</th>
+             <th>Date of Payment</th>
+             <th>Mode of Payment</th>
+             </tr>
+             <% billing.forEach(function(billing) { %>
+             <tr>
+                <td><%=billing.orderid %></td>
+                <td><%= billing.fullname %></td>
+                <td><%= billing.address %></td>
+                <td><%= billing.contact %></td>
+                <td><%= billing.email %></td>
+                <td><%= billing.dop.toDateString() %></td>
+                <td><%= billing.mop %></td>
+            </tr>
+            <% }); %>
+        </table>
+   </div>
+</body>
+</html>

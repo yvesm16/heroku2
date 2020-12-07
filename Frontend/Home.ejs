@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled by Nice HOME</title>
+    <link rel="stylesheet" href="../css/Main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="../app.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <%- include('header.ejs') -%>
+      <div class="box">
+        <div class="col-lg ">
+          <span class="pheading"> Styled by Nice</span><br>
+          <span class="pheading2"> HOME</span><br>
+          <span class="pheading3"> Bring spaces to life, one corner</span><br>
+          <span class="pheading4"> at a time.</span><br><br>
+          <form action="/aboutus">
+            <input  class="button1" type="submit" value="Learn More"/>
+          </form>
+        </div>
+        <div class="col-lg">
+          <div class="box">
+            <div class="col-lg">
+              <a class="apic" href="/products"> <img id="shop" src="../images/homeshopnow.jpg" alt="logo"  width="250" height="250">
+              </a>
+            </div><br>
+            <div class="col-lg">
+              <a class="apic1" href="/products"> <img id="pic1" src="../images/HomePhoto2.jpg" alt="logo"  width="250" height="250">
+              </a>
+            </div>
+        </div><br>
+        <div class="box">
+            <div class="col-lg">
+              <a class="apic2" href="/products"> <img id="pic2" src="../images/Homepic3.jpg" alt="logo"   width="250" height="250">
+              </a>
+            </div>
+            <div class="col-lg">
+              <a class="apic3" href="/products"> <img id="pic3" src="../images/whatnew.jpg" alt="logo"   width="250" height="250">
+              </a>
+            </div>
+        </div>
+        <br><br>
+        </div>
+        </div>
+      </div> 
+  </div>
+</body>
+</html>
